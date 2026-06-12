@@ -45,9 +45,7 @@
   
 
 <!-- Polyfills bundle. -->
-<script async src="https://www.roiify.net/sdk/roiify-ads.js"></script>
 <script src="src/polyfills.bundle.js" charset="utf-8"> </script>
-
 
 <!-- SystemJS support. -->
 <script src="src/system.bundle.js" charset="utf-8"> </script>
@@ -58,6 +56,13 @@
 <script>
     System.import('./index.js').catch(function(err) { console.error(err); })
 </script>
+
+<!-- ========== 新增 Roiify 广告容器 + SDK 开始 ========== -->
+<!-- Banner 广告渲染容器 -->
+<div data-roiify-placement data-roiify-format="banner"></div>
+<!-- 加载 Roiify SDK -->
+<script async src="https://roiify-ads.io/roiify-ads.js"></script>
+<!-- ========== 新增 Roiify 广告容器 + SDK 结束 ========== -->
 
 </body>
 </html>
